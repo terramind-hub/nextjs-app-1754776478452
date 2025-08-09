@@ -4,7 +4,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useCallback } from 'react';
 
-export default function useAuth() {
+export function useAuth() {
   const { data: session, status } = useSession();
   const router = useRouter();
 
